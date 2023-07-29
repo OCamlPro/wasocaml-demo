@@ -1,0 +1,5 @@
+(rule
+ (target hello.wasm)
+ (deps ../hello.exe)
+ (action
+  (run cp ../hello.exe.wasm ./hello.wasm)))
